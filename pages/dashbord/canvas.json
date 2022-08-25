@@ -1368,7 +1368,7 @@
                       "boxShadow": "none",
                       "widgetName": "Button6",
                       "onClick": "{{GENERATE_PDF.run(() => showModal('MODAL_PDF'), () => {})}}",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "buttonColor": "{{appsmith.theme.colors.backgroundColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -1467,7 +1467,7 @@
                       "boxShadow": "none",
                       "widgetName": "IconButton4",
                       "onClick": "{{afficher_liste.run(() => afficher_liste.run(), () => {})}}",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "buttonColor": "rgb(3, 179, 101)",
                       "displayName": "Icon Button",
                       "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
                       "searchTags": [
@@ -1488,9 +1488,6 @@
                       ],
                       "leftColumn": 38,
                       "dynamicBindingPathList": [
-                        {
-                          "key": "buttonColor"
-                        },
                         {
                           "key": "borderRadius"
                         }
@@ -1664,7 +1661,9 @@
                         "PRENOM": 161,
                         "SITUATION": 84,
                         "DATE_entree": 104,
-                        "rowIndex": 78
+                        "rowIndex": 78,
+                        "customColumn1": 84,
+                        "affectation": 308
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -1978,6 +1977,7 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 17.625,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 22,
                       "dynamicBindingPathList": [
                         {
@@ -1985,6 +1985,9 @@
                         },
                         {
                           "key": "boxShadow"
+                        },
+                        {
+                          "key": "backgroundColor"
                         }
                       ],
                       "children": [
@@ -2045,11 +2048,11 @@
                               "key": "ldv9ax0kts",
                               "isDeprecated": false,
                               "rightColumn": 37,
-                              "textAlign": "LEFT",
+                              "textAlign": "CENTER",
                               "widgetId": "2836k65dl2",
                               "isVisible": true,
                               "fontStyle": "BOLD",
-                              "textColor": "#999999",
+                              "textColor": "#ef4444",
                               "version": 1,
                               "parentId": "tckav62uw6",
                               "renderMode": "CANVAS",
@@ -2096,7 +2099,7 @@
                               "widgetId": "6n30b6vb6q",
                               "isVisible": true,
                               "fontStyle": "BOLD",
-                              "textColor": "#231F20",
+                              "textColor": "#dc2626",
                               "version": 1,
                               "parentId": "tckav62uw6",
                               "renderMode": "CANVAS",
@@ -2120,7 +2123,7 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 41,
+                              "leftColumn": 48,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -2132,7 +2135,7 @@
                               "isDisabled": false,
                               "key": "xlk3i1c8hz",
                               "isDeprecated": false,
-                              "rightColumn": 57,
+                              "rightColumn": 64,
                               "iconName": "person",
                               "widgetId": "rps763wl7w",
                               "buttonStyle": "PRIMARY",
@@ -2161,7 +2164,7 @@
                         }
                       ],
                       "key": "egu8lovgdm",
-                      "backgroundColor": "white",
+                      "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
                       "isDeprecated": false,
                       "rightColumn": 37,
                       "widgetId": "rsgt7n62qy",
