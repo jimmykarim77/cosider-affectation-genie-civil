@@ -916,6 +916,11 @@
                       "widgetName": "picker_entree",
                       "minDate": "1920-12-31T18:30:00.000Z",
                       "dateFormat": "DD/MM/YYYY",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "defaultDate"
+                        }
+                      ],
                       "displayName": "DatePicker",
                       "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
                       "searchTags": [
@@ -945,7 +950,7 @@
                       "key": "9pamu91rc2",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
-                      "defaultDate": "2022-08-22T19:52:39.946Z",
+                      "defaultDate": "",
                       "isDeprecated": false,
                       "rightColumn": 21,
                       "widgetId": "0g3qyz8mh0",
