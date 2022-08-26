@@ -47,7 +47,7 @@
           "data": ""
         },
         "rowObjects": {
-          "data": "{\n    \"affectation\": {{affectation_modifier.selectedOptionValue}},\n    \"SITUATION\": {{congeinput.text}},\n    \"DATE_entree\": {{DatePicker1.formattedDate}},\n    \"rowIndex\": {{table_liste.selectedRow.rowIndex}}\n}"
+          "data": "{\n    \"affectation\": {{affectation_modifier.selectedOptionValue}},\n    \"SITUATION\": {{congeinput.text}},\n    \"REPRISE\": {{DatePicker1.formattedDate}},\n    \"rowIndex\": {{table_liste.selectedRow.rowIndex}}\n}"
         },
         "sheetName": {
           "data": "bateau casse"

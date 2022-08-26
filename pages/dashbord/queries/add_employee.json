@@ -41,7 +41,7 @@
           "data": ""
         },
         "rowObjects": {
-          "data": " {\n    \"MAT\": {{input_mat.text}},\n    \"NOM\": {{input_name.text}} ,\n    \"PRENOM\": {{input_prenom.text}} ,\n    \"POSTE\": {{input_poste.text}} ,\n    \"SITUATION\": {{input_situation.text}} ,\n    \"DATE_entree\": {{picker_entree.formattedDate}} ,\n    \"affectation\": {{select_affecta.selectedOptionValue}}\n\t   \n    \n  }"
+          "data": " {\n    \"MAT\": {{input_mat.text}},\n    \"NOM\": {{input_name.text}} ,\n    \"PRENOM\": {{input_prenom.text}} ,\n    \"POSTE\": {{input_poste.text}} ,\n\t  \"FIN_CONTRAT\": {{input_fc.text}},\n    \"SITUATION\": {{input_situation.text}} ,\n    \"REPRISE\": {{picker_entree.formattedDate}} ,\n    \"affectation\": {{select_affecta.selectedOptionValue}}\n\t   \n    \n  }"
         },
         "sheetName": {
           "data": "bateau casse"
@@ -72,6 +72,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "input_fc.text",
       "input_mat.text",
       "input_name.text",
       "input_poste.text",
