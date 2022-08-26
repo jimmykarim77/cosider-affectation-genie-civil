@@ -1359,8 +1359,8 @@
                 "parent",
                 "group"
               ],
-              "topRow": 10,
-              "bottomRow": 71,
+              "topRow": 11,
+              "bottomRow": 72,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -1429,7 +1429,7 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "text": "Ajouter un employée",
+                      "text": "Ajouter",
                       "isDisabled": false,
                       "key": "5esh90jk7l",
                       "isDeprecated": false,
@@ -1679,11 +1679,27 @@
                         },
                         {
                           "key": "primaryColumns.REPRISE.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.EditActions1.saveButtonColor"
+                        },
+                        {
+                          "key": "primaryColumns.EditActions1.saveBorderRadius"
+                        },
+                        {
+                          "key": "primaryColumns.EditActions1.discardBorderRadius"
+                        },
+                        {
+                          "key": "primaryColumns.EditActions1.isSaveDisabled"
+                        },
+                        {
+                          "key": "primaryColumns.EditActions1.isDiscardDisabled"
                         }
                       ],
                       "leftColumn": 0,
                       "delimiter": ",",
-                      "defaultSelectedRowIndex": 0,
+                      "defaultSelectedRowIndex": "-1",
+                      "showInlineEditingOptionDropdown": true,
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisibleFilters": false,
                       "isVisible": true,
@@ -1726,17 +1742,24 @@
                         "NOM",
                         "PRENOM",
                         "POSTE",
-                        "affectation",
                         "FIN_CONTRAT",
+                        "affectation",
                         "SITUATION",
                         "REPRISE",
                         "customColumn1",
                         "customColumn2",
-                        "rowIndex"
+                        "rowIndex",
+                        "EditActions1"
                       ],
                       "dynamicPropertyPathList": [
                         {
                           "key": "onRowSelected"
+                        },
+                        {
+                          "key": "primaryColumns.EditActions1.isSaveDisabled"
+                        },
+                        {
+                          "key": "primaryColumns.EditActions1.isDiscardDisabled"
                         }
                       ],
                       "compactMode": "SHORT",
@@ -1753,7 +1776,9 @@
                         "DATE_entree": 104,
                         "rowIndex": 78,
                         "customColumn1": 84,
-                        "affectation": 308
+                        "affectation": 278,
+                        "customColumn2": 104,
+                        "FIN_CONTRAT": 119
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -1910,8 +1935,8 @@
                           "enableSort": true,
                           "isVisible": true,
                           "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
+                          "isCellEditable": true,
+                          "isEditable": true,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "SITUATION",
@@ -2053,8 +2078,8 @@
                           "enableSort": true,
                           "isVisible": true,
                           "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
+                          "isCellEditable": true,
+                          "isEditable": true,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "REPRISE",
@@ -2062,6 +2087,43 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{table_liste.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"REPRISE\"]))}}",
                           "cellBackground": "transparent"
+                        },
+                        "EditActions1": {
+                          "allowCellWrapping": false,
+                          "index": 10,
+                          "width": 150,
+                          "originalId": "EditActions1",
+                          "id": "EditActions1",
+                          "alias": "EditActions1",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "editActions",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": true,
+                          "label": "",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "",
+                          "buttonStyle": "rgb(3, 179, 101)",
+                          "cellBackground": "transparent",
+                          "saveIconAlign": "left",
+                          "discardIconAlign": "left",
+                          "saveActionLabel": "Save",
+                          "discardActionLabel": "Discard",
+                          "saveButtonColor": "{{table_liste.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                          "discardButtonColor": "#F22B2B",
+                          "saveBorderRadius": "{{table_liste.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                          "discardBorderRadius": "{{table_liste.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                          "discardButtonVariant": "TERTIARY",
+                          "isSaveDisabled": "{{table_liste.processedTableData.map((currentRow, currentIndex) => ( !table_liste.updatedRowIndices.includes(currentIndex)))}}",
+                          "isDiscardDisabled": "{{table_liste.processedTableData.map((currentRow, currentIndex) => ( !table_liste.updatedRowIndices.includes(currentIndex)))}}"
                         }
                       },
                       "onRowSelected": "",
@@ -2095,7 +2157,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 17.625,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 22,
+                      "leftColumn": 20,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -2211,7 +2273,7 @@
                               "text": "{{table_liste.tableData.filter(item=>item.affectation).length}}",
                               "key": "ldv9ax0kts",
                               "isDeprecated": false,
-                              "rightColumn": 40,
+                              "rightColumn": 51,
                               "textAlign": "CENTER",
                               "widgetId": "6n30b6vb6q",
                               "isVisible": true,
@@ -2240,7 +2302,7 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 49,
+                              "leftColumn": 51,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -2329,7 +2391,7 @@
                       "key": "egu8lovgdm",
                       "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
                       "isDeprecated": false,
-                      "rightColumn": 37,
+                      "rightColumn": 38,
                       "widgetId": "rsgt7n62qy",
                       "isVisible": true,
                       "parentId": "v5ckdm0wsu",
@@ -2615,7 +2677,7 @@
                       "text": "Create and build by HAMIMECHE KARIM. 2021/2022.",
                       "key": "wyw78ixryg",
                       "isDeprecated": false,
-                      "rightColumn": 48,
+                      "rightColumn": 58,
                       "textAlign": "CENTER",
                       "widgetId": "bfknsknh7z",
                       "isVisible": true,
@@ -3192,8 +3254,8 @@
               "hideCard": false,
               "chartData": {
                 "7h7saf1izg": {
-                  "seriesName": "Sales",
-                  "data": "[\n  {\n    \"x\": \"birkhadem\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"birkhadem\").length}}\n  },\n  {\n    \"x\": \"bateau casse\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"bateau casse\").length}}\n  },\n  {\n    \"x\": \"cherchel (sidi mousa)\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"cherchel (sidi mousa)\").length}}\n  },\n    {\n    \"x\": \"N-V atelier ferraillage)\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V atelier ferraillage\").length}}\n  } \n]"
+                  "seriesName": "",
+                  "data": "[\n  {\n    \"x\": \"birkhadem\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"birkhadem\").length}}\n  },\n  {\n    \"x\": \"bateau casse\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"bateau casse\").length}}\n  },\n  {\n    \"x\": \"cherchel (sidi mousa)\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"cherchel (sidi mousa)\").length}}\n  },\n    {\n    \"x\": \"cherchel(confection des regare AEP)\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"cherchel(confection des regare AEP)\").length}}\n  },\n    {\n    \"x\": \"N-V atelier ferraillage)\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V atelier ferraillage\").length}}\n  }, \n      {\n    \"x\": \"N-V equipe remise en etat\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V equipe remise en etat\").length}}\n  },\n   {\n    \"x\": \"N-V equipe a confection des regare A E P\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V equipe a confection des regare A E P\").length}}\n  },\n     {\n    \"x\": \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\").length}}\n  },\n  {\n    \"x\": \"N-V equipe G.C.C.C tirage electricite\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V equipe G.C.C.C tirage electricite\").length}}\n  }\n]\n\n     \n"
                 }
               },
               "animateLoading": true,
@@ -3276,10 +3338,10 @@
               "labelOrientation": "auto",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "yAxisName": "Revenue($)",
-              "chartName": "Sales Report",
+              "yAxisName": "EFFECTIF",
+              "chartName": "NOMBRE D'EFFECTIF PAR AFFECTATION",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "xAxisName": "Product Line",
+              "xAxisName": "AFFECTATION",
               "chartType": "COLUMN_CHART"
             }
           ]
@@ -3309,16 +3371,6 @@
           ],
           [
             {
-              "id": "dashbord_afficher_liste",
-              "name": "afficher_liste",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "dashbord_delete_employee",
               "name": "delete_employee",
               "confirmBeforeExecute": false,
@@ -3326,6 +3378,16 @@
               "jsonPathKeys": [
                 "table_liste.selectedRow.rowIndex"
               ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "dashbord_afficher_liste",
+              "name": "afficher_liste",
+              "confirmBeforeExecute": false,
+              "pluginType": "SAAS",
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]
