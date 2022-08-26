@@ -446,6 +446,9 @@
                         },
                         {
                           "key": "primaryColumns.date_fin.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.etat_pnt.computedValue"
                         }
                       ],
                       "leftColumn": 22,
@@ -494,8 +497,9 @@
                         "prenom",
                         "poste",
                         "date_recrt",
+                        "date_fin",
                         "rowIndex",
-                        "date_fin"
+                        "etat_pnt"
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
@@ -678,6 +682,32 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{pers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"date_fin\"]))}}",
+                          "cellBackground": ""
+                        },
+                        "etat_pnt": {
+                          "allowCellWrapping": false,
+                          "index": 7,
+                          "width": 150,
+                          "originalId": "etat_pnt",
+                          "id": "etat_pnt",
+                          "alias": "etat_pnt",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "etat_pnt",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{pers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"etat_pnt\"]))}}",
                           "cellBackground": ""
                         }
                       },
@@ -3093,7 +3123,6 @@
                       "key": "85np9yfnrw",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
-                      "defaultDate": "2022-08-24T11:38:01.011+01:00",
                       "isDeprecated": false,
                       "rightColumn": 62,
                       "widgetId": "ar05po1mud",
@@ -3372,9 +3401,7 @@
                 "TABLE_LISTE.tableData"
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "dashbord_delete_employee",
               "name": "delete_employee",

@@ -10,10 +10,10 @@
   "unreadCommentThreads": 0,
   "color": "#FBF4ED",
   "unpublishedAppLayout": {
-    "type": "MOBILE"
+    "type": "FLUID"
   },
   "publishedAppLayout": {
-    "type": "FLUID"
+    "type": "MOBILE"
   },
   "evaluationVersion": 2,
   "applicationVersion": 2,
