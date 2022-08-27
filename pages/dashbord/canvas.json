@@ -62,13 +62,13 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 540,
+                  "bottomRow": 820,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 536,
+                  "minHeight": 728,
                   "parentColumnSpace": 1,
                   "dynamicTriggerPathList": [],
                   "leftColumn": 0,
@@ -98,7 +98,7 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 56,
+                      "leftColumn": 54,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -108,7 +108,7 @@
                       "isDisabled": false,
                       "key": "lmv1b0e8bl",
                       "isDeprecated": false,
-                      "rightColumn": 64,
+                      "rightColumn": 62,
                       "iconName": "cross",
                       "widgetId": "0ubbvemhui",
                       "isVisible": true,
@@ -175,12 +175,12 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 48,
-                      "bottomRow": 52,
+                      "topRow": 76,
+                      "bottomRow": 80,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
-                      "leftColumn": 35,
+                      "leftColumn": 34,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -193,7 +193,7 @@
                       "isDisabled": false,
                       "key": "5esh90jk7l",
                       "isDeprecated": false,
-                      "rightColumn": 51,
+                      "rightColumn": 50,
                       "isDefaultClickDisabled": true,
                       "widgetId": "fpv16u47v6",
                       "buttonStyle": "PRIMARY",
@@ -225,8 +225,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 48,
-                      "bottomRow": 52,
+                      "topRow": 76,
+                      "bottomRow": 80,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -235,7 +235,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 51,
+                      "leftColumn": 50,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -245,7 +245,7 @@
                       "isDisabled": false,
                       "key": "5esh90jk7l",
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 62,
                       "isDefaultClickDisabled": true,
                       "widgetId": "rw3nsldiqd",
                       "buttonStyle": "PRIMARY_BUTTON",
@@ -271,8 +271,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 7,
-                      "bottomRow": 11,
+                      "topRow": 49,
+                      "bottomRow": 53,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -283,7 +283,7 @@
                       "parentColumnSpace": 6.9375,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 2,
+                      "leftColumn": 3,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -304,7 +304,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
                       "isDeprecated": false,
-                      "rightColumn": 21,
+                      "rightColumn": 22,
                       "widgetId": "03405dsf2j",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -329,8 +329,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 11,
-                      "bottomRow": 15,
+                      "topRow": 55,
+                      "bottomRow": 59,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -340,7 +340,7 @@
                       "parentColumnSpace": 6.9375,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 2,
+                      "leftColumn": 3,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -360,7 +360,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
                       "isDeprecated": false,
-                      "rightColumn": 21,
+                      "rightColumn": 28,
                       "widgetId": "1ptvnuziea",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -451,7 +451,7 @@
                           "key": "primaryColumns.etat_pnt.computedValue"
                         }
                       ],
-                      "leftColumn": 22,
+                      "leftColumn": 1,
                       "delimiter": ",",
                       "defaultSelectedRowIndex": 0,
                       "showInlineEditingOptionDropdown": true,
@@ -713,7 +713,7 @@
                       },
                       "key": "zl9869rnju",
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 61,
                       "textSize": "0.875rem",
                       "widgetId": "g6es6e9211",
                       "tableData": "{{liste_pers.data}}",
@@ -737,8 +737,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 16,
-                      "bottomRow": 20,
+                      "topRow": 60,
+                      "bottomRow": 64,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -748,7 +748,7 @@
                       "parentColumnSpace": 13.90625,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 2,
+                      "leftColumn": 3,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -768,7 +768,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
                       "isDeprecated": false,
-                      "rightColumn": 21,
+                      "rightColumn": 28,
                       "widgetId": "wbaubnzcrh",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -793,8 +793,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 21,
-                      "bottomRow": 25,
+                      "topRow": 49,
+                      "bottomRow": 53,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -804,7 +804,7 @@
                       "parentColumnSpace": 13.90625,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 2,
+                      "leftColumn": 23,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -824,7 +824,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
                       "isDeprecated": false,
-                      "rightColumn": 21,
+                      "rightColumn": 61,
                       "widgetId": "0p5jb1gzd6",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -848,8 +848,8 @@
                       "searchTags": [
                         "dropdown"
                       ],
-                      "topRow": 33,
-                      "bottomRow": 37,
+                      "topRow": 60,
+                      "bottomRow": 64,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "SELECT_WIDGET",
@@ -859,7 +859,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 13.90625,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 2,
+                      "leftColumn": 29,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -876,7 +876,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
                       "isDeprecated": false,
-                      "rightColumn": 21,
+                      "rightColumn": 61,
                       "widgetId": "odgqgvcqvj",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -898,8 +898,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 38,
-                      "bottomRow": 42,
+                      "topRow": 65,
+                      "bottomRow": 69,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -909,7 +909,7 @@
                       "parentColumnSpace": 13.90625,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 2,
+                      "leftColumn": 3,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -927,7 +927,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 21,
+                      "rightColumn": 28,
                       "widgetId": "wvnn35qgcy",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -956,8 +956,8 @@
                       "searchTags": [
                         "calendar"
                       ],
-                      "topRow": 43,
-                      "bottomRow": 47,
+                      "topRow": 65,
+                      "bottomRow": 69,
                       "shortcuts": false,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
@@ -966,7 +966,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 13.90625,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 2,
+                      "leftColumn": 29,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -982,7 +982,7 @@
                       "isRequired": false,
                       "defaultDate": "",
                       "isDeprecated": false,
-                      "rightColumn": 21,
+                      "rightColumn": 61,
                       "widgetId": "0g3qyz8mh0",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -1010,8 +1010,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 26,
-                      "bottomRow": 30,
+                      "topRow": 55,
+                      "bottomRow": 59,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -1021,7 +1021,7 @@
                       "parentColumnSpace": 13.90625,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 2,
+                      "leftColumn": 29,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1041,7 +1041,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
                       "isDeprecated": false,
-                      "rightColumn": 21,
+                      "rightColumn": 61,
                       "widgetId": "07c98me28s",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -1072,7 +1072,7 @@
                 }
               ],
               "key": "o4u6wyucko",
-              "height": 536,
+              "height": 728,
               "isDeprecated": false,
               "rightColumn": 0,
               "detachFromLayout": true,
@@ -1085,7 +1085,7 @@
               "isLoading": false,
               "onClose": "",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "width": 902
+              "width": 619.1999999999999
             },
             {
               "boxShadow": "none",
