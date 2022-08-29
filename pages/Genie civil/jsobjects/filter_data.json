@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
     "name": "filter_data",
-    "pageId": "dashbord",
+    "pageId": "Genie civil",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -9,7 +9,7 @@
     "body": "export default {\n\tfilter_users:(data=afficher_liste.data)=>{\n\t\tlet users = data;\n\t\n\t\tif(selectfilter.selectedOptionValue !== \"TOUT\"){\n\t\t\tusers = users.filter(item=> item.affectation === selectfilter.selectedOptionValue);\n\t\t}\n\t\t\n\t\t\n\treturn users;\n\t\t}\n}",
     "variables": []
   },
-  "id": "dashbord_filter_data",
+  "id": "Genie civil_filter_data",
   "deleted": false,
   "gitSyncId": "62fd8b1884757e0c055519ef_63038999b189ad45f609af7d"
 }

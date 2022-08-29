@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "dashbord",
+    "pageId": "Genie civil",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -62,7 +62,7 @@
         }
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "formData.rowIndex.data"
@@ -79,7 +79,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "dashbord_delete_employee",
+  "id": "Genie civil_delete_employee",
   "deleted": false,
   "gitSyncId": "62fd8b1884757e0c055519ef_6304973ebc158514a170a6bd"
 }

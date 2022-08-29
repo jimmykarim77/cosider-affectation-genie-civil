@@ -1,8 +1,28 @@
 {
   "pages": [
     {
-      "id": "dashbord",
+      "id": "Genie civil",
       "isDefault": true
+    },
+    {
+      "id": "electricité",
+      "isDefault": false
+    },
+    {
+      "id": "Materiel",
+      "isDefault": false
+    },
+    {
+      "id": "fibre",
+      "isDefault": false
+    },
+    {
+      "id": "eclairage",
+      "isDefault": false
+    },
+    {
+      "id": "Administration",
+      "isDefault": false
     }
   ],
   "viewMode": false,

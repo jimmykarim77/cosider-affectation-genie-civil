@@ -2,7 +2,7 @@
   "pluginType": "SAAS",
   "pluginId": "google-sheets-plugin",
   "unpublishedAction": {
-    "name": "modifier_employee",
+    "name": "liste_pers",
     "datasource": {
       "name": "Untitled Datasource",
       "pluginId": "google-sheets-plugin",
@@ -13,21 +13,21 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "dashbord",
+    "pageId": "Genie civil",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "data": "UPDATE_ONE"
+          "data": "FETCH_MANY"
         },
         "entityType": {
           "data": "ROWS"
         },
         "pagination": {
           "data": {
-            "limit": "20",
+            "limit": "1000",
             "offset": "0"
           }
         },
@@ -37,7 +37,9 @@
             "nom",
             "prenom",
             "poste",
-            "date_recrt"
+            "date_recrt",
+            "date_fin",
+            "etat_pnt"
           ]
         },
         "queryFormat": {
@@ -46,11 +48,8 @@
         "range": {
           "data": ""
         },
-        "rowObjects": {
-          "data": "{\n    \"affectation\": {{affectation_modifier.selectedOptionValue}},\n    \"SITUATION\": {{congeinput.text}},\n    \"REPRISE\": {{DatePicker1.formattedDate}},\n    \"rowIndex\": {{table_liste.selectedRow.rowIndex}}\n}"
-        },
         "sheetName": {
-          "data": "bateau casse"
+          "data": "pers"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/1Xck4E4a20dPse1VvydnaaQNXa-ua_qavrTkvqYY0Kkg/edit"
@@ -58,37 +57,43 @@
         "smartSubstitution": {
           "data": true
         },
+        "sortBy": {
+          "data": [
+            {
+              "column": "",
+              "order": "Ascending"
+            }
+          ]
+        },
         "tableHeaderIndex": {
           "data": "1"
         },
         "where": {
           "data": {
-            "condition": "AND"
+            "condition": "AND",
+            "children": [
+              {
+                "condition": "NOT_EQ",
+                "key": "etat_pnt",
+                "value": "DIRECTION"
+              }
+            ]
           }
         }
       }
     },
-    "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "formData.rowObjects.data"
-      }
-    ],
+    "executeOnLoad": true,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "DatePicker1.formattedDate",
-      "affectation_modifier.selectedOptionValue",
-      "congeinput.text",
-      "table_liste.selectedRow.rowIndex"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "dashbord_modifier_employee",
+  "id": "Genie civil_liste_pers",
   "deleted": false,
-  "gitSyncId": "62fd8b1884757e0c055519ef_6304e720b189ad45f609d9c3"
+  "gitSyncId": "62fd8b1884757e0c055519ef_6303e0dab189ad45f609b9fa"
 }

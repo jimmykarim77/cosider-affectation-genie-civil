@@ -2,7 +2,7 @@
   "pluginType": "SAAS",
   "pluginId": "google-sheets-plugin",
   "unpublishedAction": {
-    "name": "liste_pers",
+    "name": "afficher_liste",
     "datasource": {
       "name": "Untitled Datasource",
       "pluginId": "google-sheets-plugin",
@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "dashbord",
+    "pageId": "Genie civil",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -27,20 +27,12 @@
         },
         "pagination": {
           "data": {
-            "limit": "1000",
-            "offset": "0"
+            "limit": "700",
+            "offset": ""
           }
         },
         "projection": {
-          "data": [
-            "mat",
-            "nom",
-            "prenom",
-            "poste",
-            "date_recrt",
-            "date_fin",
-            "etat_pnt"
-          ]
+          "data": []
         },
         "queryFormat": {
           "data": "ROWS"
@@ -49,10 +41,13 @@
           "data": ""
         },
         "sheetName": {
-          "data": "pers"
+          "data": "bateau casse"
         },
         "sheetUrl": {
-          "data": "https://docs.google.com/spreadsheets/d/1Xck4E4a20dPse1VvydnaaQNXa-ua_qavrTkvqYY0Kkg/edit"
+          "componentData": "",
+          "data": "https://docs.google.com/spreadsheets/d/1Xck4E4a20dPse1VvydnaaQNXa-ua_qavrTkvqYY0Kkg/edit",
+          "viewType": "component",
+          "jsonData": ""
         },
         "smartSubstitution": {
           "data": true
@@ -60,7 +55,7 @@
         "sortBy": {
           "data": [
             {
-              "column": "",
+              "column": "MAT",
               "order": "Ascending"
             }
           ]
@@ -73,9 +68,8 @@
             "condition": "AND",
             "children": [
               {
-                "condition": "NOT_EQ",
-                "key": "etat_pnt",
-                "value": "DIRECTION"
+                "condition": "LT",
+                "key": ""
               }
             ]
           }
@@ -93,7 +87,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "dashbord_liste_pers",
+  "id": "Genie civil_afficher_liste",
   "deleted": false,
-  "gitSyncId": "62fd8b1884757e0c055519ef_6303e0dab189ad45f609b9fa"
+  "gitSyncId": "62fd8b1884757e0c055519ef_62fd8efe84757e0c05551a89"
 }

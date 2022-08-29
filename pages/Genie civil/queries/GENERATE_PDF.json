@@ -17,7 +17,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "dashbord",
+    "pageId": "Genie civil",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -62,7 +62,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "dashbord_GENERATE_PDF",
+  "id": "Genie civil_GENERATE_PDF",
   "deleted": false,
   "gitSyncId": "62fd8b1884757e0c055519ef_6302b39fe0482178a676bb90"
 }

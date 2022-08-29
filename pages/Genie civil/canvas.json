@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "dashbord",
-    "slug": "dashbord",
+    "name": "Genie civil",
+    "slug": "genie-civil",
     "layouts": [
       {
         "viewMode": false,
@@ -62,13 +62,13 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 820,
+                  "bottomRow": 990,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 728,
+                  "minHeight": 998,
                   "parentColumnSpace": 1,
                   "dynamicTriggerPathList": [],
                   "leftColumn": 0,
@@ -92,8 +92,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 1,
-                      "bottomRow": 5,
+                      "topRow": 0,
+                      "bottomRow": 4,
                       "type": "ICON_BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -128,8 +128,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 1,
-                      "bottomRow": 5,
+                      "topRow": 0,
+                      "bottomRow": 4,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -175,12 +175,13 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 76,
-                      "bottomRow": 80,
+                      "topRow": 4,
+                      "bottomRow": 8,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
-                      "leftColumn": 34,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 30,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -189,11 +190,11 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "text": "Close",
+                      "text": "Annuler",
                       "isDisabled": false,
                       "key": "5esh90jk7l",
                       "isDeprecated": false,
-                      "rightColumn": 50,
+                      "rightColumn": 44,
                       "isDefaultClickDisabled": true,
                       "widgetId": "fpv16u47v6",
                       "buttonStyle": "PRIMARY",
@@ -212,7 +213,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button3",
-                      "onClick": "{{add_employee.run(() => afficher_liste.run(), () => {})}}",
+                      "onClick": "{{utils.add_emp()}}",
                       "buttonColor": "#dc2626",
                       "dynamicPropertyPathList": [
                         {
@@ -225,8 +226,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 76,
-                      "bottomRow": 80,
+                      "topRow": 4,
+                      "bottomRow": 8,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -235,17 +236,17 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 50,
+                      "leftColumn": 45,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
                         }
                       ],
-                      "text": "Confirm",
+                      "text": "Ajouter",
                       "isDisabled": false,
                       "key": "5esh90jk7l",
                       "isDeprecated": false,
-                      "rightColumn": 62,
+                      "rightColumn": 59,
                       "isDefaultClickDisabled": true,
                       "widgetId": "rw3nsldiqd",
                       "buttonStyle": "PRIMARY_BUTTON",
@@ -258,6 +259,7 @@
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "buttonVariant": "PRIMARY",
+                      "iconAlign": "left",
                       "placement": "CENTER"
                     },
                     {
@@ -271,8 +273,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 49,
-                      "bottomRow": 53,
+                      "topRow": 53,
+                      "bottomRow": 57,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -281,7 +283,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 6.9375,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onTextChanged"
+                        }
+                      ],
                       "resetOnSubmit": true,
                       "leftColumn": 3,
                       "dynamicBindingPathList": [
@@ -301,12 +307,15 @@
                       "placeholderText": "marticule",
                       "isDisabled": true,
                       "key": "a8xsquqthg",
+                      "validation": "",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
+                      "onTextChanged": "",
                       "isDeprecated": false,
                       "rightColumn": 22,
                       "widgetId": "03405dsf2j",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "errorMessage": "",
                       "isVisible": true,
                       "label": "matricule",
                       "version": 2,
@@ -329,8 +338,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 55,
-                      "bottomRow": 59,
+                      "topRow": 57,
+                      "bottomRow": 61,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -378,7 +387,7 @@
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "isVisibleDownload": false,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 7,
+                      "topRow": 13,
                       "isSortable": true,
                       "type": "TABLE_WIDGET_V2",
                       "inlineEditingSaveOption": "ROW_LEVEL",
@@ -453,7 +462,7 @@
                       ],
                       "leftColumn": 1,
                       "delimiter": ",",
-                      "defaultSelectedRowIndex": 0,
+                      "defaultSelectedRowIndex": "-1",
                       "showInlineEditingOptionDropdown": true,
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisibleFilters": false,
@@ -486,6 +495,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "primaryColumnId": "mat",
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -503,7 +513,7 @@
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
-                      "bottomRow": 47,
+                      "bottomRow": 53,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 62,
@@ -737,8 +747,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 60,
-                      "bottomRow": 64,
+                      "topRow": 57,
+                      "bottomRow": 61,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -748,7 +758,7 @@
                       "parentColumnSpace": 13.90625,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 3,
+                      "leftColumn": 29,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -768,7 +778,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
                       "isDeprecated": false,
-                      "rightColumn": 28,
+                      "rightColumn": 61,
                       "widgetId": "wbaubnzcrh",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -793,8 +803,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 49,
-                      "bottomRow": 53,
+                      "topRow": 53,
+                      "bottomRow": 57,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -848,8 +858,8 @@
                       "searchTags": [
                         "dropdown"
                       ],
-                      "topRow": 60,
-                      "bottomRow": 64,
+                      "topRow": 9,
+                      "bottomRow": 13,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "SELECT_WIDGET",
@@ -859,7 +869,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 13.90625,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 29,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1010,8 +1020,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 55,
-                      "bottomRow": 59,
+                      "topRow": 61,
+                      "bottomRow": 65,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -1021,7 +1031,7 @@
                       "parentColumnSpace": 13.90625,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 29,
+                      "leftColumn": 3,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1072,7 +1082,7 @@
                 }
               ],
               "key": "o4u6wyucko",
-              "height": 728,
+              "height": 998,
               "isDeprecated": false,
               "rightColumn": 0,
               "detachFromLayout": true,
@@ -1085,7 +1095,7 @@
               "isLoading": false,
               "onClose": "",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "width": 619.1999999999999
+              "width": 584.2
             },
             {
               "boxShadow": "none",
@@ -1566,7 +1576,7 @@
                         }
                       ],
                       "labelPosition": "Auto",
-                      "options": "[\n{\n    \"label\": \"tout\",\n    \"value\": \"TOUT\"\n  },\n  {\n    \"label\": \"bateau casse\",\n    \"value\": \"bateau casse\"\n  },\n  {\n    \"label\": \"birkhadem\",\n    \"value\": \"birkhadem\"\n  },\n\t{\n\t \"label\": \"cherchel (sidi mousa)\",\n\t \"value\": \"cherchel (sidi mousa)\"\n\t},\n\t{\n \"label\": \"cherchel(confection des regare AEP)\",\n \"value\": \"cherchel(confection des regare AEP)\"\n  },\n\t{\n \"label\": \"N-V atelier ferraillage\",\n \"value\": \"N-V atelier ferraillage\"\n  },\n\t{\n \"label\": \"N-V equipe remise en etat\",\n \"value\": \"N-V equipe remise en etat\"\n  },\n\t{\n \"label\": \"N-V equipe a confection des regare A E P\",\n \"value\": \"N-V equipe a confection des regare A E P\"\n  },\n\t{\n \"label\": \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\",\n \"value\": \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\"\n  },\n\t{\n \"label\": \"N-V equipe G.C.C.C tirage electricite\",\n \"value\": \"N-V equipe G.C.C.C tirage electricite\"\n  }\n\t\n\t\n  \n\n]",
+                      "options": "[\n{\n    \"label\": \"tout\",\n    \"value\": \"TOUT\"\n  },\n  {\n    \"label\": \"bateau casse\",\n    \"value\": \"bateau casse\"\n  },\n\t{\n\t\"label\": \"marsa\",\n    \"value\": \"marsa\"\n\t},\n  {\n    \"label\": \"birkhadem\",\n    \"value\": \"birkhadem\"\n  },\n\t{\n\t \"label\": \"cherchel (sidi mousa)\",\n\t \"value\": \"cherchel (sidi mousa)\"\n\t},\n\t{\n \"label\": \"cherchel(confection des regare AEP)\",\n \"value\": \"cherchel(confection des regare AEP)\"\n  },\n\t{\n \"label\": \"N-V atelier ferraillage\",\n \"value\": \"N-V atelier ferraillage\"\n  },\n\t{\n \"label\": \"N-V equipe remise en etat\",\n \"value\": \"N-V equipe remise en etat\"\n  },\n\t{\n \"label\": \"N-V equipe a confection des regare A E P\",\n \"value\": \"N-V equipe a confection des regare A E P\"\n  },\n\t{\n \"label\": \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\",\n \"value\": \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\"\n  },\n\t{\n \"label\": \"N-V equipe G.C.C.C tirage electricite\",\n \"value\": \"N-V equipe G.C.C.C tirage electricite\"\n  }\n\t\n\t\n  \n\n]",
                       "placeholderText": "AFFECTATION",
                       "isDisabled": false,
                       "key": "q1yk3b648t",
@@ -1805,9 +1815,9 @@
                         "step": 62,
                         "status": 75,
                         "MAT": 79,
-                        "NOM": 101,
+                        "NOM": 175,
                         "PRENOM": 161,
-                        "SITUATION": 84,
+                        "SITUATION": 100,
                         "DATE_entree": 104,
                         "rowIndex": 78,
                         "customColumn1": 84,
@@ -2709,7 +2719,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Create and build by HAMIMECHE KARIM. 2021/2022.",
+                      "text": "Create and build by HAMIMECHE KARIM. 2022/2023.",
                       "key": "wyw78ixryg",
                       "isDeprecated": false,
                       "rightColumn": 58,
@@ -2937,8 +2947,13 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button8",
-                      "onClick": "{{modifier_employee.run(() => afficher_liste.run(), () => {})}}",
+                      "onClick": "{{utils.update_emp()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -3289,7 +3304,7 @@
               "chartData": {
                 "7h7saf1izg": {
                   "seriesName": "",
-                  "data": "[\n  {\n    \"x\": \"birkhadem\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"birkhadem\").length}}\n  },\n  {\n    \"x\": \"bateau casse\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"bateau casse\").length}}\n  },\n  {\n    \"x\": \"cherchel (sidi mousa)\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"cherchel (sidi mousa)\").length}}\n  },\n    {\n    \"x\": \"cherchel(confection des regare AEP)\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"cherchel(confection des regare AEP)\").length}}\n  },\n    {\n    \"x\": \"N-V atelier ferraillage)\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V atelier ferraillage\").length}}\n  }, \n      {\n    \"x\": \"N-V equipe remise en etat\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V equipe remise en etat\").length}}\n  },\n   {\n    \"x\": \"N-V equipe a confection des regare A E P\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V equipe a confection des regare A E P\").length}}\n  },\n     {\n    \"x\": \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\").length}}\n  },\n  {\n    \"x\": \"N-V equipe G.C.C.C tirage electricite\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V equipe G.C.C.C tirage electricite\").length}}\n  }\n]\n\n     \n"
+                  "data": "[\n  {\n    \"x\": \"birkhadem\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"birkhadem\").length}}\n  },\n  {\n    \"x\": \"bateau casse\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"bateau casse\").length}}\n  },\n  {\n    \"x\": \"marsa\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"marsa\").length}}\n  },\n  {\n    \"x\": \"cherchel (sidi mousa)\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"cherchel (sidi mousa)\").length}}\n  },\n    {\n    \"x\": \"cherchel(confection des regare AEP)\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"cherchel(confection des regare AEP)\").length}}\n  },\n    {\n    \"x\": \"N-V atelier ferraillage)\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V atelier ferraillage\").length}}\n  }, \n      {\n    \"x\": \"N-V equipe remise en etat\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V equipe remise en etat\").length}}\n  },\n   {\n    \"x\": \"N-V equipe a confection des regare A E P\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V equipe a confection des regare A E P\").length}}\n  },\n     {\n    \"x\": \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\").length}}\n  },\n  {\n    \"x\": \"N-V equipe G.C.C.C tirage electricite\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V equipe G.C.C.C tirage electricite\").length}}\n  }\n]\n\n     \n"
                 }
               },
               "animateLoading": true,
@@ -3383,7 +3398,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "dashbord_liste_pers",
+              "id": "Genie civil_liste_pers",
               "name": "liste_pers",
               "confirmBeforeExecute": false,
               "pluginType": "SAAS",
@@ -3393,7 +3408,7 @@
           ],
           [
             {
-              "id": "dashbord_GENERATE_PDF",
+              "id": "Genie civil_GENERATE_PDF",
               "name": "GENERATE_PDF",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -3401,21 +3416,11 @@
                 "TABLE_LISTE.tableData"
               ],
               "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "dashbord_delete_employee",
-              "name": "delete_employee",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [
-                "table_liste.selectedRow.rowIndex"
-              ],
-              "timeoutInMillisecond": 10000
             }
           ],
           [
             {
-              "id": "dashbord_afficher_liste",
+              "id": "Genie civil_afficher_liste",
               "name": "afficher_liste",
               "confirmBeforeExecute": false,
               "pluginType": "SAAS",
@@ -3425,7 +3430,7 @@
           ]
         ],
         "validOnPageLoadActions": true,
-        "id": "dashbord",
+        "id": "Genie civil",
         "deleted": false,
         "policies": [],
         "userPermissions": []

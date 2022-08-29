@@ -2,7 +2,7 @@
   "pluginType": "SAAS",
   "pluginId": "google-sheets-plugin",
   "unpublishedAction": {
-    "name": "afficher_liste",
+    "name": "add_employee",
     "datasource": {
       "name": "Untitled Datasource",
       "pluginId": "google-sheets-plugin",
@@ -13,22 +13,22 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "dashbord",
+    "pageId": "Genie civil",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "data": "FETCH_MANY"
+          "data": "INSERT_ONE"
         },
         "entityType": {
           "data": "ROWS"
         },
         "pagination": {
           "data": {
-            "limit": "700",
-            "offset": ""
+            "limit": "1000",
+            "offset": "0"
           }
         },
         "projection": {
@@ -40,54 +40,53 @@
         "range": {
           "data": ""
         },
+        "rowObjects": {
+          "data": " {\n    \"MAT\": {{input_mat.text}},\n    \"NOM\": {{input_name.text}} ,\n    \"PRENOM\": {{input_prenom.text}} ,\n    \"POSTE\": {{input_poste.text}} ,\n\t  \"FIN_CONTRAT\": {{input_fc.text}},\n    \"SITUATION\": {{input_situation.text}} ,\n    \"REPRISE\": {{picker_entree.formattedDate}} ,\n    \"affectation\": {{select_affecta.selectedOptionValue}}\n\t   \n  }"
+        },
         "sheetName": {
           "data": "bateau casse"
         },
         "sheetUrl": {
-          "componentData": "",
-          "data": "https://docs.google.com/spreadsheets/d/1Xck4E4a20dPse1VvydnaaQNXa-ua_qavrTkvqYY0Kkg/edit",
-          "viewType": "component",
-          "jsonData": ""
+          "data": "https://docs.google.com/spreadsheets/d/1Xck4E4a20dPse1VvydnaaQNXa-ua_qavrTkvqYY0Kkg/edit"
         },
         "smartSubstitution": {
           "data": true
-        },
-        "sortBy": {
-          "data": [
-            {
-              "column": "MAT",
-              "order": "Ascending"
-            }
-          ]
         },
         "tableHeaderIndex": {
           "data": "1"
         },
         "where": {
           "data": {
-            "condition": "AND",
-            "children": [
-              {
-                "condition": "LT",
-                "key": ""
-              }
-            ]
+            "condition": "AND"
           }
         }
       }
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.rowObjects.data"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "input_fc.text",
+      "input_mat.text",
+      "input_name.text",
+      "input_poste.text",
+      "input_prenom.text",
+      "input_situation.text",
+      "picker_entree.formattedDate",
+      "select_affecta.selectedOptionValue"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "dashbord_afficher_liste",
+  "id": "Genie civil_add_employee",
   "deleted": false,
-  "gitSyncId": "62fd8b1884757e0c055519ef_62fd8efe84757e0c05551a89"
+  "gitSyncId": "62fd8b1884757e0c055519ef_6303e5be22c743180838e9db"
 }
