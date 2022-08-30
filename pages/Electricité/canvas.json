@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Genie civil",
-    "slug": "genie-civil",
+    "name": "Electricité",
+    "slug": "electricite",
     "layouts": [
       {
         "viewMode": false,
@@ -879,7 +879,7 @@
                         }
                       ],
                       "labelPosition": "Left",
-                      "options": "[\n\n  {\n    \"label\": \"bateau casse\",\n    \"value\": \"bateau casse\"\n  },\n\t {\n    \"label\": \"marsa\",\n    \"value\": \"marsa\"\n  },\n  {\n    \"label\": \"birkhadem\",\n    \"value\": \"birkhadem\"\n  },\n\t{\n\t \"label\": \"cherchel (sidi mousa)\",\n\t \"value\": \"cherchel (sidi mousa)\"\n\t},\n\t{\n \"label\": \"cherchel(confection des regare AEP)\",\n \"value\": \"cherchel(confection des regare AEP)\"\n  },\n\t{\n \"label\": \"N-V atelier ferraillage\",\n \"value\": \"N-V atelier ferraillage\"\n  },\n\t{\n \"label\": \"N-V equipe remise en etat\",\n \"value\": \"N-V equipe remise en etat\"\n  },\n\t{\n \"label\": \"N-V equipe a confection des regare A E P\",\n \"value\": \"N-V equipe a confection des regare A E P\"\n  },\n\t{\n \"label\": \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\",\n \"value\": \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\"\n  },\n\t{\n \"label\": \"N-V equipe G.C.C.C tirage electricite\",\n \"value\": \"N-V equipe G.C.C.C tirage electricite\"\n  }\n\t\n\t\n  \n\n]",
+                      "options": "[\n\n  {\n    \"label\": \"bateau casse\",\n    \"value\": \"bateau casse\"\n  },\n  {\n    \"label\": \"birkhadem\",\n    \"value\": \"birkhadem\"\n  },\n\t{\n\t \"label\": \"cherchel (sidi mousa)\",\n\t \"value\": \"cherchel (sidi mousa)\"\n\t},\n\t{\n \"label\": \"cherchel(confection des regare AEP)\",\n \"value\": \"cherchel(confection des regare AEP)\"\n  },\n\t{\n \"label\": \"N-V atelier ferraillage\",\n \"value\": \"N-V atelier ferraillage\"\n  },\n\t{\n \"label\": \"N-V equipe remise en etat\",\n \"value\": \"N-V equipe remise en etat\"\n  },\n\t{\n \"label\": \"N-V equipe a confection des regare A E P\",\n \"value\": \"N-V equipe a confection des regare A E P\"\n  },\n\t{\n \"label\": \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\",\n \"value\": \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\"\n  },\n\t{\n \"label\": \"N-V equipe G.C.C.C tirage electricite\",\n \"value\": \"N-V equipe G.C.C.C tirage electricite\"\n  }\n\t\n\t\n  \n\n]",
                       "placeholderText": "affectation",
                       "isDisabled": false,
                       "key": "3tq4dws5zo",
@@ -2591,7 +2591,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Application de Gestion D'affectation pour la Structure Genie Civil Pole H31",
+                      "text": "Application de Gestion D'affectation pour la Structure Electricité Pole H31",
                       "key": "wyw78ixryg",
                       "isDeprecated": false,
                       "rightColumn": 60,
@@ -3398,7 +3398,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Genie civil_liste_pers",
+              "id": "Electricité_liste_pers",
               "name": "liste_pers",
               "confirmBeforeExecute": false,
               "pluginType": "SAAS",
@@ -3408,7 +3408,7 @@
           ],
           [
             {
-              "id": "Genie civil_GENERATE_PDF",
+              "id": "Electricité_GENERATE_PDF",
               "name": "GENERATE_PDF",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -3420,7 +3420,7 @@
           ],
           [
             {
-              "id": "Genie civil_afficher_liste",
+              "id": "Electricité_afficher_liste",
               "name": "afficher_liste",
               "confirmBeforeExecute": false,
               "pluginType": "SAAS",
@@ -3430,7 +3430,7 @@
           ]
         ],
         "validOnPageLoadActions": true,
-        "id": "Genie civil",
+        "id": "Electricité",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -3441,5 +3441,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "62fd8b1884757e0c055519ef_62fd8b1884757e0c055519f1"
+  "gitSyncId": "62fd8b1884757e0c055519ef_630cd12d38d6e912b79dc1fa"
 }

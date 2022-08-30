@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "Electricité",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tadd_emp : async ()=>{\n\t\t\tif(afficher_liste.data.map(item=>item.MAT) == pers.selectedRow.mat){\n\t\t\tshowAlert(\"vous avez deja ajouter cette personne\");\n\t\t}\n\t\telse{\n\t\t\tawait add_employee.run();\n\t\tawait afficher_liste.run();\n\t\tshowAlert(\"vous avez ajouter un employer avec success\");\n\t\treturn closeModal('modal_add_empl');\t\t\t\n\t\t}\n\t\t\n\t\n\t},\n\tupdate_emp: async ()=>{\n\t\tawait modifier_employee.run();\n\t\tawait afficher_liste.run();\n\t\treturn closeModal('modal_modifier');\n\t\t\n\t}\n}",
+    "variables": []
+  },
+  "id": "Electricité_utils",
+  "deleted": false,
+  "gitSyncId": "62fd8b1884757e0c055519ef_630cd12d38d6e912b79dc210"
+}
