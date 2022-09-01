@@ -3425,7 +3425,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "SAAS",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 2000
             }
           ]
         ],

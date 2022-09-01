@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tadd_emp : async ()=>{\n\t\t\tif(afficher_liste.data.map(item=>item.MAT) == pers.selectedRow.mat){\n\t\t\tshowAlert(\"vous avez deja ajouter cette personne\");\n\t\t}\n\t\telse{\n\t\t\tawait add_employee.run();\n\t\tawait afficher_liste.run();\n\t\tshowAlert(\"vous avez ajouter un employer avec success\");\n\t\treturn closeModal('modal_add_empl');\t\t\t\n\t\t}\n\t\t\n\t\n\t},\n\tupdate_emp: async ()=>{\n\t\tawait modifier_employee.run();\n\t\tawait afficher_liste.run();\n\t\treturn closeModal('modal_modifier');\n\t\t\n\t}\n}",
+    "body": "export default {\n\tadd_emp : async ()=>{\n\t\t\tif(pers.selectedRow.poste == \"\"){\n\t\t\tshowAlert(\"veillez remplir les champs svp\");\n\t\t}else\n\t\t\tif(table_liste.tableData.filter(item=>item.MAT === input_mat.text)){\n\t\t\t\t\t\tshowAlert(\"l'employer est deja ajouter\");\n\t\t}else{\n\t\t\tawait add_employee.run();\n\t\tawait afficher_liste.run();\n\t\tshowAlert(\"vous avez ajouter un employer avec success\");\n\t\treturn closeModal('modal_add_empl');\t\t\t\n\t\t}\n\t\n\t\t\t\n\t\n\t},\n\tupdate_emp: async ()=>{\n\t\tawait modifier_employee.run();\n\t\tawait afficher_liste.run();\n\t\treturn closeModal('modal_modifier');\n\t\t\n\t}\n}",
     "variables": []
   },
   "id": "Genie civil_utils",
