@@ -3322,7 +3322,7 @@
               },
               "key": "78f9dh54cv",
               "isDeprecated": false,
-              "rightColumn": 15,
+              "rightColumn": 64,
               "widgetId": "4tummijazi",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
