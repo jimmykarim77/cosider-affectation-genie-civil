@@ -15,10 +15,6 @@
     {
       "id": "Administration",
       "isDefault": false
-    },
-    {
-      "id": "Electricité",
-      "isDefault": false
     }
   ],
   "viewMode": false,

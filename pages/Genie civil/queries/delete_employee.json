@@ -15,7 +15,7 @@
     },
     "pageId": "Genie civil",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 2000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "formData": {

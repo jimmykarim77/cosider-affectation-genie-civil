@@ -1644,7 +1644,7 @@
                       "topRow": 15,
                       "isSortable": true,
                       "type": "TABLE_WIDGET_V2",
-                      "inlineEditingSaveOption": "ROW_LEVEL",
+                      "inlineEditingSaveOption": "CUSTOM",
                       "animateLoading": true,
                       "dynamicBindingPathList": [
                         {
@@ -1724,21 +1724,6 @@
                         },
                         {
                           "key": "primaryColumns.REPRISE.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.EditActions1.saveButtonColor"
-                        },
-                        {
-                          "key": "primaryColumns.EditActions1.saveBorderRadius"
-                        },
-                        {
-                          "key": "primaryColumns.EditActions1.discardBorderRadius"
-                        },
-                        {
-                          "key": "primaryColumns.EditActions1.isSaveDisabled"
-                        },
-                        {
-                          "key": "primaryColumns.EditActions1.isDiscardDisabled"
                         }
                       ],
                       "leftColumn": 0,
@@ -1793,18 +1778,11 @@
                         "REPRISE",
                         "customColumn1",
                         "customColumn2",
-                        "rowIndex",
-                        "EditActions1"
+                        "rowIndex"
                       ],
                       "dynamicPropertyPathList": [
                         {
                           "key": "onRowSelected"
-                        },
-                        {
-                          "key": "primaryColumns.EditActions1.isSaveDisabled"
-                        },
-                        {
-                          "key": "primaryColumns.EditActions1.isDiscardDisabled"
                         }
                       ],
                       "compactMode": "SHORT",
@@ -1980,8 +1958,8 @@
                           "enableSort": true,
                           "isVisible": true,
                           "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
+                          "isCellEditable": false,
+                          "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "SITUATION",
@@ -2123,8 +2101,8 @@
                           "enableSort": true,
                           "isVisible": true,
                           "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
+                          "isCellEditable": false,
+                          "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "REPRISE",
@@ -2132,43 +2110,6 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{table_liste.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"REPRISE\"]))}}",
                           "cellBackground": "transparent"
-                        },
-                        "EditActions1": {
-                          "allowCellWrapping": false,
-                          "index": 10,
-                          "width": 150,
-                          "originalId": "EditActions1",
-                          "id": "EditActions1",
-                          "alias": "EditActions1",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "editActions",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": false,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": true,
-                          "label": "",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "",
-                          "buttonStyle": "rgb(3, 179, 101)",
-                          "cellBackground": "transparent",
-                          "saveIconAlign": "left",
-                          "discardIconAlign": "left",
-                          "saveActionLabel": "Save",
-                          "discardActionLabel": "Discard",
-                          "saveButtonColor": "{{table_liste.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
-                          "discardButtonColor": "#F22B2B",
-                          "saveBorderRadius": "{{table_liste.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                          "discardBorderRadius": "{{table_liste.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                          "discardButtonVariant": "TERTIARY",
-                          "isSaveDisabled": "{{table_liste.processedTableData.map((currentRow, currentIndex) => ( !table_liste.updatedRowIndices.includes(currentIndex)))}}",
-                          "isDiscardDisabled": "{{table_liste.processedTableData.map((currentRow, currentIndex) => ( !table_liste.updatedRowIndices.includes(currentIndex)))}}"
                         }
                       },
                       "onRowSelected": "",
@@ -3015,7 +2956,7 @@
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "",
+                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( table_liste.selectedRow.affectation))(affectation_modifier.options, affectation_modifier.serverSideFiltering) }}",
                       "animateLoading": true,
                       "parentColumnSpace": 6.9375,
                       "dynamicTriggerPathList": [],
@@ -3026,6 +2967,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultOptionValue"
                         }
                       ],
                       "labelPosition": "Left",
@@ -3378,7 +3322,7 @@
               },
               "key": "78f9dh54cv",
               "isDeprecated": false,
-              "rightColumn": 64,
+              "rightColumn": 15,
               "widgetId": "4tummijazi",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,

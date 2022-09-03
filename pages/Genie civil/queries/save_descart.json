@@ -2,7 +2,7 @@
   "pluginType": "SAAS",
   "pluginId": "google-sheets-plugin",
   "unpublishedAction": {
-    "name": "add_employee",
+    "name": "save_descart",
     "datasource": {
       "name": "Untitled Datasource",
       "pluginId": "google-sheets-plugin",
@@ -13,21 +13,21 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Electricité",
+    "pageId": "Genie civil",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "data": "INSERT_ONE"
+          "data": "UPDATE_MANY"
         },
         "entityType": {
           "data": "ROWS"
         },
         "pagination": {
           "data": {
-            "limit": "1000",
+            "limit": "20",
             "offset": "0"
           }
         },
@@ -41,7 +41,7 @@
           "data": ""
         },
         "rowObjects": {
-          "data": " {\n    \"MAT\": {{input_mat.text}},\n    \"NOM\": {{input_name.text}} ,\n    \"PRENOM\": {{input_prenom.text}} ,\n    \"POSTE\": {{input_poste.text}} ,\n\t  \"FIN_CONTRAT\": {{input_fc.text}},\n    \"SITUATION\": {{input_situation.text}} ,\n    \"REPRISE\": {{picker_entree.formattedDate}} ,\n    \"affectation\": {{select_affecta.selectedOptionValue}}\n\t   \n  }"
+          "data": "{\n   \n    \"SITUATION\": {{congeinput.text}},\n  \t \"REPRISE\": {{DatePicker1.formattedDate}}\n    \n}"
         },
         "sheetName": {
           "data": "bateau casse"
@@ -72,21 +72,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "input_fc.text",
-      "input_mat.text",
-      "input_name.text",
-      "input_poste.text",
-      "input_prenom.text",
-      "input_situation.text",
-      "picker_entree.formattedDate",
-      "select_affecta.selectedOptionValue"
+      "DatePicker1.formattedDate",
+      "congeinput.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Electricité_add_employee",
+  "id": "Genie civil_save_descart",
   "deleted": false,
-  "gitSyncId": "62fd8b1884757e0c055519ef_630cd12d38d6e912b79dc203"
+  "gitSyncId": "62fd8b1884757e0c055519ef_63134c3bc276f65530f66bce"
 }
