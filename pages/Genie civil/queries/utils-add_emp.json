@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  if (pers.selectedRow.poste == \"\") {\n    showAlert(\"veillez remplir les champs svp\");\n  } else if (table_liste.tableData.filter(item => item.MAT === input_mat.text)) {\n    showAlert(\"l'employer est deja ajouter\");\n  } else {\n    await add_employee.run();\n    await afficher_liste.run();\n    showAlert(\"vous avez ajouter un employer avec success\");\n    return closeModal('modal_add_empl');\n  }\n}",
+      "body": "async () => {\n  if (pers.selectedRow.poste == \"\") {\n    showAlert(\"veillez remplir les champs svp\");\n  } else {\n    await add_employee.run();\n    await afficher_liste.run();\n    showAlert(\"vous avez ajouter un employer avec success\");\n    return closeModal('modal_add_empl');\n  }\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  if (pers.selectedRow.poste == \"\") {\n    showAlert(\"veillez remplir les champs svp\");\n  } else if (table_liste.tableData.filter(item => item.MAT === input_mat.text)) {\n    showAlert(\"l'employer est deja ajouter\");\n  } else {\n    await add_employee.run();\n    await afficher_liste.run();\n    showAlert(\"vous avez ajouter un employer avec success\");\n    return closeModal('modal_add_empl');\n  }\n}"
+      "async () => {\n  if (pers.selectedRow.poste == \"\") {\n    showAlert(\"veillez remplir les champs svp\");\n  } else {\n    await add_employee.run();\n    await afficher_liste.run();\n    showAlert(\"vous avez ajouter un employer avec success\");\n    return closeModal('modal_add_empl');\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
