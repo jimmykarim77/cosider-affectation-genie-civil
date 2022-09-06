@@ -3370,7 +3370,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "SAAS",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 2000
+              "timeoutInMillisecond": 10000
             }
           ]
         ],
