@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Genie civil",
-    "slug": "genie-civil",
+    "name": "Genie civil Copy",
+    "slug": "genie-civil-copy",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1410,
+          "bottomRow": 1200,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -876,13 +876,10 @@
                         },
                         {
                           "key": "borderRadius"
-                        },
-                        {
-                          "key": "options"
                         }
                       ],
                       "labelPosition": "Left",
-                      "options": "{{affiche_affectation.data.map(c =>({\n\t\"label\": c.affectation,\n\t \"value\": c.affectation\n}))}}",
+                      "options": "[\n\n  {\n    \"label\": \"bateau casse\",\n    \"value\": \"bateau casse\"\n  },\n\t {\n    \"label\": \"marsa\",\n    \"value\": \"marsa\"\n  },\n  {\n    \"label\": \"birkhadem\",\n    \"value\": \"birkhadem\"\n  },\n\t{\n\t \"label\": \"cherchel (sidi mousa)\",\n\t \"value\": \"cherchel (sidi mousa)\"\n\t},\n\t{\n \"label\": \"cherchel(confection des regare AEP)\",\n \"value\": \"cherchel(confection des regare AEP)\"\n  },\n\t{\n \"label\": \"N-V atelier ferraillage\",\n \"value\": \"N-V atelier ferraillage\"\n  },\n\t{\n \"label\": \"N-V equipe remise en etat\",\n \"value\": \"N-V equipe remise en etat\"\n  },\n\t{\n \"label\": \"N-V equipe a confection des regare A E P\",\n \"value\": \"N-V equipe a confection des regare A E P\"\n  },\n\t{\n \"label\": \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\",\n \"value\": \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\"\n  },\n\t{\n \"label\": \"N-V equipe G.C.C.C tirage electricite\",\n \"value\": \"N-V equipe G.C.C.C tirage electricite\"\n  }\n\t\n\t\n  \n\n]",
                       "placeholderText": "affectation",
                       "isDisabled": false,
                       "key": "3tq4dws5zo",
@@ -1552,11 +1549,6 @@
                       "boxShadow": "none",
                       "widgetName": "selectfilter",
                       "isFilterable": true,
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "options"
-                        }
-                      ],
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
                       "labelText": "",
@@ -1570,14 +1562,10 @@
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `{\n    \"label\": \"tout\",\n    \"value\": \"TOUT\"\n  }`))(selectfilter.options, selectfilter.serverSideFiltering) }}",
+                      "defaultOptionValue": "{\n    \"label\": \"tout\",\n    \"value\": \"TOUT\"\n  }",
                       "animateLoading": true,
                       "parentColumnSpace": 17.9375,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onFilterUpdate"
-                        }
-                      ],
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
@@ -1585,16 +1573,10 @@
                         },
                         {
                           "key": "borderRadius"
-                        },
-                        {
-                          "key": "options"
-                        },
-                        {
-                          "key": "defaultOptionValue"
                         }
                       ],
                       "labelPosition": "Auto",
-                      "options": "{{affiche_affectation.data.map(c =>({\n\t\"label\": c.affectation,\n\t \"value\": c.affectation\n})).concat({\n    \"label\": \"tout\",\n    \"value\": \"TOUT\"\n  })}}",
+                      "options": "[\n{\n    \"label\": \"tout\",\n    \"value\": \"TOUT\"\n  },\n  {\n    \"label\": \"bateau casse\",\n    \"value\": \"bateau casse\"\n  },\n\t{\n\t\"label\": \"marsa\",\n    \"value\": \"marsa\"\n\t},\n  {\n    \"label\": \"birkhadem\",\n    \"value\": \"birkhadem\"\n  },\n\t{\n\t \"label\": \"cherchel (sidi mousa)\",\n\t \"value\": \"cherchel (sidi mousa)\"\n\t},\n\t{\n \"label\": \"cherchel(confection des regare AEP)\",\n \"value\": \"cherchel(confection des regare AEP)\"\n  },\n\t{\n \"label\": \"N-V atelier ferraillage\",\n \"value\": \"N-V atelier ferraillage\"\n  },\n\t{\n \"label\": \"N-V equipe remise en etat\",\n \"value\": \"N-V equipe remise en etat\"\n  },\n\t{\n \"label\": \"N-V equipe a confection des regare A E P\",\n \"value\": \"N-V equipe a confection des regare A E P\"\n  },\n\t{\n \"label\": \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\",\n \"value\": \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\"\n  },\n\t{\n \"label\": \"N-V equipe G.C.C.C tirage electricite\",\n \"value\": \"N-V equipe G.C.C.C tirage electricite\"\n  }\n\t\n\t\n  \n\n]",
                       "placeholderText": "AFFECTATION",
                       "isDisabled": false,
                       "key": "q1yk3b648t",
@@ -1610,8 +1592,7 @@
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "onFilterUpdate": "{{affiche_affectation.run()}}"
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                     },
                     {
                       "boxShadow": "none",
@@ -2611,8 +2592,8 @@
                 "parent",
                 "group"
               ],
-              "topRow": 132,
-              "bottomRow": 139,
+              "topRow": 111,
+              "bottomRow": 118,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -2991,13 +2972,10 @@
                         },
                         {
                           "key": "defaultOptionValue"
-                        },
-                        {
-                          "key": "options"
                         }
                       ],
                       "labelPosition": "Left",
-                      "options": "{{affiche_affectation.data.map(c =>({\n\t\"label\": c.affectation,\n\t \"value\": c.affectation\n}))}}",
+                      "options": "[\n\n  {\n    \"label\": \"bateau casse\",\n    \"value\": \"bateau casse\"\n  },\n\t {\n    \"label\": \"marsa\",\n    \"value\": \"marsa\"\n  },\n  {\n    \"label\": \"birkhadem\",\n    \"value\": \"birkhadem\"\n  },\n\t{\n\t \"label\": \"cherchel (sidi mousa)\",\n\t \"value\": \"cherchel (sidi mousa)\"\n\t},\n\t{\n \"label\": \"cherchel(confection des regare AEP)\",\n \"value\": \"cherchel(confection des regare AEP)\"\n  },\n\t{\n \"label\": \"N-V atelier ferraillage\",\n \"value\": \"N-V atelier ferraillage\"\n  },\n\t{\n \"label\": \"N-V equipe remise en etat\",\n \"value\": \"N-V equipe remise en etat\"\n  },\n\t{\n \"label\": \"N-V equipe a confection des regare A E P\",\n \"value\": \"N-V equipe a confection des regare A E P\"\n  },\n\t{\n \"label\": \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\",\n \"value\": \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\"\n  },\n\t{\n \"label\": \"N-V equipe G.C.C.C tirage electricite\",\n \"value\": \"N-V equipe G.C.C.C tirage electricite\"\n  }\n\t\n\t\n  \n\n]",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "d5w5246s1y",
@@ -3029,7 +3007,7 @@
                       "topRow": 19,
                       "bottomRow": 23,
                       "parentRowSpace": 10,
-                      "labelWidth": "18",
+                      "labelWidth": 5,
                       "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
                       "hideCard": false,
@@ -3086,7 +3064,7 @@
                       "bottomRow": 28,
                       "shortcuts": false,
                       "parentRowSpace": 10,
-                      "labelWidth": "18",
+                      "labelWidth": 5,
                       "type": "DATE_PICKER_WIDGET2",
                       "hideCard": false,
                       "animateLoading": true,
@@ -3265,7 +3243,7 @@
                 "visualisations"
               ],
               "topRow": 72,
-              "bottomRow": 131,
+              "bottomRow": 111,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -3366,15 +3344,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Genie civil_affiche_affectation",
-              "name": "affiche_affectation",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Genie civil_liste_pers",
+              "id": "Genie civil Copy_liste_pers",
               "name": "liste_pers",
               "confirmBeforeExecute": false,
               "pluginType": "SAAS",
@@ -3384,7 +3354,7 @@
           ],
           [
             {
-              "id": "Genie civil_GENERATE_PDF",
+              "id": "Genie civil Copy_GENERATE_PDF",
               "name": "GENERATE_PDF",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -3396,7 +3366,7 @@
           ],
           [
             {
-              "id": "Genie civil_afficher_liste",
+              "id": "Genie civil Copy_afficher_liste",
               "name": "afficher_liste",
               "confirmBeforeExecute": false,
               "pluginType": "SAAS",
@@ -3406,7 +3376,7 @@
           ]
         ],
         "validOnPageLoadActions": true,
-        "id": "Genie civil",
+        "id": "Genie civil Copy",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -3417,5 +3387,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "62fd8b1884757e0c055519ef_62fd8b1884757e0c055519f1"
+  "gitSyncId": "62fd8b1884757e0c055519ef_631f1f98236aad0c01cfd463"
 }

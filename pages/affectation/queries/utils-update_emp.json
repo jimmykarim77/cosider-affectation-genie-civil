@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Genie civil",
-    "collectionId": "Genie civil_utils",
+    "pageId": "affectation",
+    "collectionId": "affectation_utils",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -40,7 +40,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Genie civil_utils.update_emp",
+  "id": "affectation_utils.update_emp",
   "deleted": false,
-  "gitSyncId": "62fd8b1884757e0c055519ef_631f35deaa707106b23a4d58"
+  "gitSyncId": "62fd8b1884757e0c055519ef_631f0d37236aad0c01cfd225"
 }

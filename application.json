@@ -5,15 +5,11 @@
       "isDefault": true
     },
     {
-      "id": "fibre",
+      "id": "affectation",
       "isDefault": false
     },
     {
-      "id": "eclairage",
-      "isDefault": false
-    },
-    {
-      "id": "Administration",
+      "id": "Genie civil Copy",
       "isDefault": false
     }
   ],
