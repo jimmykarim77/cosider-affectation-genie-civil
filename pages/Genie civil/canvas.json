@@ -3272,7 +3272,7 @@
               "chartData": {
                 "7h7saf1izg": {
                   "seriesName": "",
-                  "data": "[\n  {\n    \"x\": \"birkhadem\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"birkhadem\").length}}\n  },\n  {\n    \"x\": \"bateau casse\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"bateau casse\").length}}\n  },\n  {\n    \"x\": \"marsa\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"marsa\").length}}\n  },\n  {\n    \"x\": \"cherchel (sidi mousa)\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"cherchel (sidi mousa)\").length}}\n  },\n    {\n    \"x\": \"cherchel(confection des regare AEP)\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"cherchel(confection des regare AEP)\").length}}\n  },\n    {\n    \"x\": \"N-V atelier ferraillage)\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V atelier ferraillage\").length}}\n  }, \n      {\n    \"x\": \"N-V equipe remise en etat\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V equipe remise en etat\").length}}\n  },\n   {\n    \"x\": \"N-V equipe a confection des regare A E P\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V equipe a confection des regare A E P\").length}}\n  },\n     {\n    \"x\": \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V EQUIPE G.C.C.T.C DE TIRAGE ELECTRICITE\").length}}\n  },\n  {\n    \"x\": \"N-V equipe G.C.C.C tirage electricite\",\n    \"y\": {{afficher_liste.data.filter(item=>item.affectation== \"N-V equipe G.C.C.C tirage electricite\").length}}\n  }\n]\n\n     \n"
+                  "data": "{{affiche_affectation.data.map(item=>({\n  \"x\": item.affectation,\n  \"y\": afficher_liste.data.filter(u=>u.affectation ===item.affectation).length\n})\n                              )}}\n\n     \n"
                 }
               },
               "animateLoading": true,
@@ -3374,6 +3374,14 @@
               "timeoutInMillisecond": 10000
             },
             {
+              "id": "Genie civil_afficher_liste",
+              "name": "afficher_liste",
+              "confirmBeforeExecute": false,
+              "pluginType": "SAAS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Genie civil_liste_pers",
               "name": "liste_pers",
               "confirmBeforeExecute": false,
@@ -3391,16 +3399,6 @@
               "jsonPathKeys": [
                 "TABLE_LISTE.tableData"
               ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Genie civil_afficher_liste",
-              "name": "afficher_liste",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]

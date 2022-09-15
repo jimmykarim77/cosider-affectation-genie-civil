@@ -2,7 +2,7 @@
   "pluginType": "SAAS",
   "pluginId": "google-sheets-plugin",
   "unpublishedAction": {
-    "name": "liste_pers",
+    "name": "modifier_affectation",
     "datasource": {
       "name": "Untitled Datasource",
       "pluginId": "google-sheets-plugin",
@@ -15,19 +15,19 @@
     },
     "pageId": "affectation",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 2000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "data": "FETCH_MANY"
+          "data": "UPDATE_ONE"
         },
         "entityType": {
           "data": "ROWS"
         },
         "pagination": {
           "data": {
-            "limit": "2000",
+            "limit": "20",
             "offset": "0"
           }
         },
@@ -37,9 +37,7 @@
             "nom",
             "prenom",
             "poste",
-            "date_recrt",
-            "date_fin",
-            "etat_pnt"
+            "date_recrt"
           ]
         },
         "queryFormat": {
@@ -48,8 +46,11 @@
         "range": {
           "data": ""
         },
+        "rowObjects": {
+          "data": "{\n    \"affectation\": {{input_afct.text}},\n    \"duree\": {{input_ddure.text}},\n\t  \"rowIndex\": {{table_affectation.selectedRow.rowIndex}}\n}"
+        },
         "sheetName": {
-          "data": "pers"
+          "data": "affectation"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/1Xck4E4a20dPse1VvydnaaQNXa-ua_qavrTkvqYY0Kkg/edit"
@@ -57,43 +58,36 @@
         "smartSubstitution": {
           "data": true
         },
-        "sortBy": {
-          "data": [
-            {
-              "column": "",
-              "order": "Ascending"
-            }
-          ]
-        },
         "tableHeaderIndex": {
           "data": "1"
         },
         "where": {
           "data": {
-            "condition": "AND",
-            "children": [
-              {
-                "condition": "NOT_EQ",
-                "key": "etat_pnt",
-                "value": "DIRECTION"
-              }
-            ]
+            "condition": "AND"
           }
         }
       }
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.rowObjects.data"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "input_afct.text",
+      "input_ddure.text",
+      "table_affectation.selectedRow.rowIndex"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "affectation_liste_pers",
+  "id": "affectation_modifier_affectation",
   "deleted": false,
-  "gitSyncId": "62fd8b1884757e0c055519ef_631f0d37236aad0c01cfd226"
+  "gitSyncId": "62fd8b1884757e0c055519ef_631f0d37236aad0c01cfd22b"
 }

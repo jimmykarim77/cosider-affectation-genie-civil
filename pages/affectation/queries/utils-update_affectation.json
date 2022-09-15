@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "add_emp",
-    "fullyQualifiedName": "utils.add_emp",
+    "name": "update_affectation",
+    "fullyQualifiedName": "utils.update_affectation",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  if (pers.selectedRow.poste == \"\") {\n    showAlert(\"veillez remplir les champs svp\");\n  } else {\n    await add_employee.run();\n    await afficher_liste.run();\n    showAlert(\"vous avez ajouter un employer avec success\");\n    return closeModal('modal_add_empl');\n  }\n}",
+      "body": "async () => {\n  await modifier_affectation.run();\n  await affiche_affectation.run();\n  return closeModal('modalaf');\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,14 +33,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  if (pers.selectedRow.poste == \"\") {\n    showAlert(\"veillez remplir les champs svp\");\n  } else {\n    await add_employee.run();\n    await afficher_liste.run();\n    showAlert(\"vous avez ajouter un employer avec success\");\n    return closeModal('modal_add_empl');\n  }\n}"
+      "async () => {\n  await modifier_affectation.run();\n  await affiche_affectation.run();\n  return closeModal('modalaf');\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "affectation_utils.add_emp",
+  "id": "affectation_utils.update_affectation",
   "deleted": false,
-  "gitSyncId": "62fd8b1884757e0c055519ef_631f0d37236aad0c01cfd22a"
+  "gitSyncId": "62fd8b1884757e0c055519ef_63207ca3236aad0c01cfedf2"
 }

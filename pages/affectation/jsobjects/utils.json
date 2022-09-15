@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tadd_emp : async ()=>{\n\t\t\tif(pers.selectedRow.poste == \"\"){\n\t\t\tshowAlert(\"veillez remplir les champs svp\");\n\t\t}else{\n\t\t\tawait add_employee.run();\n\t\tawait afficher_liste.run();\n\t\tshowAlert(\"vous avez ajouter un employer avec success\");\n\t\treturn closeModal('modal_add_empl');\t\t\t\n\t\t}\n\t\n\t\t\t\n\t\n\t},\n\tupdate_emp: async ()=>{\n\t\tawait modifier_employee.run();\n\t\tawait afficher_liste.run();\n\t\treturn closeModal('modal_modifier');\n\t\t\n\t},\n\t\n\tadd_affectation : async ()=>{\n\t\t\tif(input_affect.text == \"\"){\n\t\t\tshowAlert(\"veillez remplir les champs svp\");\n\t\t}else{\n\t\t\tawait add_affectation.run();\n\t\tawait affiche_affectation.run();\n\t\tshowAlert(\"vous avez ajouter une affectation avec success\");\n\t\treturn closeModal('Modal_ajouter_affectation');\t\t\t\n\t\t}\n}\n}",
+    "body": "export default {\n\tadd_affectation : async ()=>{\n\t\t\tif(input_affect.text == \"\"){\n\t\t\tshowAlert(\"veillez remplir les champs svp\");\n\t\t}else{\n\t\t\tawait add_affectation.run();\n\t\tawait affiche_affectation.run();\n\t\tshowAlert(\"vous avez ajouter une affectation avec success\");\n\t\treturn closeModal('Modal_ajouter_affectation');\t\t\t\n\t\t}\n\t},\n\t\t\t\n\t\t\tupdate_affectation: async ()=>{\n\t\tawait modifier_affectation.run();\n\t\tawait affiche_affectation.run();\n\t\treturn closeModal('modalaf');\n\t\t\n\t}\n\t\n\t\n}\n",
     "variables": []
   },
   "id": "affectation_utils",

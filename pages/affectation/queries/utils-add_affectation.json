@@ -16,7 +16,7 @@
     "pageId": "affectation",
     "collectionId": "affectation_utils",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "async () => {\n  if (input_affect.text == \"\") {\n    showAlert(\"veillez remplir les champs svp\");\n  } else {\n    await add_affectation.run();\n    await affiche_affectation.run();\n    showAlert(\"vous avez ajouter une affectation avec success\");\n    return closeModal('Modal_ajouter_affectation');\n  }\n}",

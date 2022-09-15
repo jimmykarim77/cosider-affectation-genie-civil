@@ -2,7 +2,7 @@
   "pluginType": "SAAS",
   "pluginId": "google-sheets-plugin",
   "unpublishedAction": {
-    "name": "afficher_liste",
+    "name": "delete_affectation",
     "datasource": {
       "name": "Untitled Datasource",
       "pluginId": "google-sheets-plugin",
@@ -15,20 +15,20 @@
     },
     "pageId": "affectation",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 2000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "data": "FETCH_MANY"
+          "data": "DELETE_ONE"
         },
         "entityType": {
           "data": "ROWS"
         },
         "pagination": {
           "data": {
-            "limit": "700",
-            "offset": ""
+            "limit": "20",
+            "offset": "0"
           }
         },
         "projection": {
@@ -40,54 +40,46 @@
         "range": {
           "data": ""
         },
+        "rowIndex": {
+          "data": "{{table_affectation.selectedRow.rowIndex}}"
+        },
         "sheetName": {
-          "data": "bateau casse"
+          "data": "affectation"
         },
         "sheetUrl": {
-          "componentData": "",
-          "data": "https://docs.google.com/spreadsheets/d/1Xck4E4a20dPse1VvydnaaQNXa-ua_qavrTkvqYY0Kkg/edit",
-          "viewType": "component",
-          "jsonData": ""
+          "data": "https://docs.google.com/spreadsheets/d/1Xck4E4a20dPse1VvydnaaQNXa-ua_qavrTkvqYY0Kkg/edit"
         },
         "smartSubstitution": {
           "data": true
-        },
-        "sortBy": {
-          "data": [
-            {
-              "column": "MAT",
-              "order": "Ascending"
-            }
-          ]
         },
         "tableHeaderIndex": {
           "data": "1"
         },
         "where": {
           "data": {
-            "condition": "AND",
-            "children": [
-              {
-                "condition": "LT",
-                "key": ""
-              }
-            ]
+            "condition": "AND"
           }
         }
       }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.rowIndex.data"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
-    "userSetOnLoad": false,
+    "jsonPathKeys": [
+      "table_affectation.selectedRow.rowIndex"
+    ],
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "affectation_afficher_liste",
+  "id": "affectation_delete_affectation",
   "deleted": false,
-  "gitSyncId": "62fd8b1884757e0c055519ef_631f0d37236aad0c01cfd22e"
+  "gitSyncId": "62fd8b1884757e0c055519ef_631f0d37236aad0c01cfd228"
 }
