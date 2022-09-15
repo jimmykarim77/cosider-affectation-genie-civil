@@ -2787,7 +2787,7 @@
                   "key": "defaultMarkers"
                 }
               ],
-              "onMarkerClick": "",
+              "onMarkerClick": "{{showAlert('slt','info')}}",
               "enablePickLocation": true,
               "mapCenter": {
                 "lat": 36.753768,
